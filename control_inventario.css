@@ -1,0 +1,427 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color:rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+.encabezado {
+    background-color: rgb(0, 0, 0);
+    color: pink;
+    padding: 20px 0;
+}
+
+.iconsRedes {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px;
+}
+
+.navIconsRedes a {
+    color:#e6006e;
+    margin: 0 15px;
+    font-size: 24px;
+    transition: color 0.3s;
+    text-decoration: none;
+}
+
+.navIconsRedes a:hover {
+    color: #ffffff;
+    
+}
+
+.tituloSakura {
+    text-align: center;
+    margin-top:     0px;
+}
+
+.sakura {
+    font-size: 50px;
+    font-weight: bold;
+    color: #e6006e;
+    letter-spacing: 5px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+.Nav_Sakura a{
+    text-decoration: none;
+}
+.Boton_Superior{
+    padding: 5px 20px 5px 20px;
+    margin: 0 25px 0 25px;
+    color: #000000;
+    text-decoration: none;
+    font-size: 25px;
+    background-color: #fff;
+    border-radius: 100px;
+}
+.Boton_Superior:hover{
+    color: #ffffff;
+    background-color: #e6006e;
+}
+.Control_Inventario{
+    color: white;
+    text-align: center;
+    padding: 15px 1px 0px 1px;
+    font-size: 30px;
+}
+.superiorPrincipal {
+    background-color:rgb(44, 44, 44);
+    padding: 10px 0;
+}
+
+.enlacesSuperior {
+    display: flex;
+    justify-content: center;
+}
+
+.navSuperior {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+.navSuperior:hover {
+    color: #e6006e;
+
+}
+.iconsEnlaces {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px;
+}
+
+.navIconsEnlaces a {
+    color: #ffffff;
+    margin-left: 15px;
+    font-size: 24px;
+    transition: color 0.3s;
+    text-decoration: none;
+}
+.navIconsEnlaces a:hover {
+    color: #e6006e;
+
+}
+
+.Barra_Busqueda{
+    position: absolute;
+    transform: translate(-100%);
+}
+.Busqueda_Barra{
+    outline: none;
+    box-sizing: border-box;
+    height: 20px;
+    width: 0px;
+    padding: 12px;
+    color: #000000;
+    border-radius: 50%;
+    font-size: 15px;
+    border: 1px solid #000000;
+    transition: all .5s ease;
+}
+::placeholder{
+    color: gray;
+}
+.Boton_Busqueda{
+    position:absolute;
+    right: 0;
+    top: 0;
+    width: 25px;
+    height: 25px;
+    border-radius: 0;
+    text-align: center;
+    cursor: pointer;
+    transition: .2s;
+}
+.Boton_Busqueda i{
+    font-size: 22px;
+    color: rgb(0, 0, 0);
+    transition: all .5s ease;
+}
+.Barra_Busqueda:hover input{
+    width: 200px;
+    border-radius: 5%;
+}
+.Boton_Busqueda:hover{
+    background-color: #e6006e;
+}
+.Main{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.Botones_Main{
+    text-align: initial;
+    margin-left: 5%;
+    margin-top: 20px;
+}
+.Boton_Main{
+    padding: 5px 20px 5px 20px;
+    margin: 0 15px 0 15px;
+    text-decoration: none;
+    background-color: #000000;
+    color: #fff;
+    border-radius: 100px;
+}
+.Boton_Main:hover{
+    background-color:#e6006e;
+}
+.Tabla{
+    color: black;
+    padding: 5px;
+    margin: 0 auto;
+}
+.th_ImgProducto{
+    font-size: 25px;
+    text-align: center;
+    padding: 10px 25px 10px 25px;
+}
+.th_Producto{
+    padding: 0 250px 0 0;
+}
+.Imagen_Fila{
+    text-align: center;
+}
+.Img_Fila_Tabla{
+    height: 80px;
+    width: 80px;
+}
+.Producto_Fila{
+    text-align: initial;
+}
+.NombreProducto_Fila{
+    font-size: 20px;
+}
+.ID_Producto_Fila{
+    font-size: 15px;
+    color: rgb(95, 95, 95);
+}
+.th_Categoria{
+    font-size: 25px;
+    text-align: center;
+    padding: 10px 50px 10px 50px;
+}
+.Categoria_Fila{
+    text-align: center;
+}
+.Categoria_Texto{
+    font-size: 15px;
+}
+.th_Stock{
+    font-size: 25px;
+    text-align: center;
+    padding: 10px 50px 10px 50px;
+}
+.Stock_Texto{
+    text-align: center;
+}
+.th_Precio{
+    font-size: 25px;
+    text-align: center;
+    padding: 10px 50px 10px 50px;
+}
+.th_Proveedor{
+    font-size: 25px;
+    padding: 10px 50px 10px 50px;
+}
+.th_EnVenta{
+    font-size: 25px;
+    padding: 10px 50px 10px 50px;
+}
+.lbl_swicth{
+    display: inline-block;
+    width: 55px;
+    height: 30px;
+    background-color: #aaa;
+    border-radius: 100px;
+    position: relative;
+    cursor: pointer;
+}
+.lbl_swicth:after{
+    position: absolute;
+    content: '';
+    width: 22px;
+    height: 22px;
+    background: #fff;
+    border-radius: 100px;
+    top: 4px;
+    right: 28px;
+    transition: 0.3s;
+}
+#btn_switch_1{
+    display: none;
+}
+#btn_switch_1:checked~ .lbl_swicth{
+    background-color: #51d553;
+}
+#btn_switch_1:checked~ .lbl_swicth::after{
+    left: 28px;
+}
+#btn_switch_2{
+    display: none;
+}
+#btn_switch_2:checked~ .lbl_swicth{
+    background-color: #51d553;
+}
+#btn_switch_2:checked~ .lbl_swicth::after{
+    left: 28px;
+}
+#btn_switch_3{
+    display: none;
+}
+#btn_switch_3:checked~ .lbl_swicth{
+    background-color: #51d553;
+}
+#btn_switch_3:checked~ .lbl_swicth::after{
+    left: 28px;
+}
+#btn_switch_4{
+    display: none;
+}
+#btn_switch_4:checked~ .lbl_swicth{
+    background-color: #51d553;
+}
+#btn_switch_4:checked~ .lbl_swicth::after{
+    left: 28px;
+}
+#btn_switch_5{
+    display: none;
+}
+#btn_switch_5:checked~ .lbl_swicth{
+    background-color: #51d553;
+}
+#btn_switch_5:checked~ .lbl_swicth::after{
+    left: 28px;
+}
+#btn_switch_6{
+    display: none;
+}
+#btn_switch_6:checked~ .lbl_swicth{
+    background-color: #51d553;
+}
+#btn_switch_6:checked~ .lbl_swicth::after{
+    left: 28px;
+}
+#btn_switch:checked~ .lbl_swicth{
+    background-color: #51d553;
+}
+#btn_switch:checked~ .lbl_swicth::after{
+    left: 28px;
+}
+.barraHorizontalInfo {
+    background-color: rgb(44, 44, 44);
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.barraHorizontalInfo h2 {
+    margin: 0;
+}
+
+.barraHorizontalInfo h2:hover {
+    color: #e6006e;
+}
+footer {
+    text-align: center;
+    background-color: #222;
+    color: #fff;
+    padding: 10px;
+}
+@media (max-width: 1024px) {
+    .enlacesSuperior {
+        flex-wrap: wrap;
+    }
+
+    .navSuperior {
+        margin: 10px 10px;
+        font-size: 14px;
+    }
+
+    .imagenesHorizontal {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .imgP {
+        width: 200px;
+        height: auto;
+    }
+
+    .text-imagen {
+        font-size: 18px;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 768px) {
+    .iconsRedes,
+    .iconsEnlaces {
+        justify-content: center;
+        padding-right: 0;
+        padding: 10px 0;
+    }
+
+    .tituloSakura h1 {
+        font-size: 36px;
+    }
+
+    .enlacesSuperior {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navSuperior {
+        margin: 5px 0;
+    }
+
+    .imagenesHorizontal {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imagenyTexto {
+        margin-bottom: 20px;
+    }
+
+    .barraHorizontalInfo {
+        flex-direction: column;
+        align-items: center;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .barraHorizontalInfo h2 {
+        margin: 8px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .imgP {
+        width: 90vw;
+        height: auto;
+    }
+
+    .sakura {
+        font-size: 28px;
+    }
+
+    .text-imagen {
+        font-size: 16px;
+        padding: 6px;
+    }
+
+    .navIconsRedes a,
+    .navIconsEnlaces a {
+        font-size: 18px;
+        margin: 0 8px;
+    }
+}

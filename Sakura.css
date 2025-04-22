@@ -1,0 +1,328 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: rgb(255, 255, 255);;
+    font-weight: bold;
+}
+
+.encabezado {
+    background-color: rgb(0, 0, 0);
+    color: pink;
+    padding: 20px 0;
+}
+
+.iconsRedes {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px;
+}
+
+.navIconsRedes a {
+    color:#e6006e;
+    margin: 0 15px;
+    font-size: 24px;
+    transition: color 0.3s;
+    text-decoration: none;
+}
+
+.navIconsRedes a:hover {
+    color: #ffffff;
+    
+}
+
+.tituloSakura {
+    text-align: center;
+    margin-top:     0px;
+}
+
+.sakura {
+    font-size: 50px;
+    font-weight: bold;
+    color: #e6006e;
+    letter-spacing: 5px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+.Nav_Sakura a{
+    text-decoration: none;
+}
+.superiorPrincipal {
+    background-color:rgb(44, 44, 44);
+    padding: 10px 0;
+}
+
+.enlacesSuperior {
+    display: flex;
+    justify-content: center;
+}
+
+.navSuperior {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.navSuperior:hover {
+    color: #e6006e;
+
+}
+
+.iconsEnlaces {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px;
+}
+
+.navIconsEnlaces a {
+    color: #ffffff;
+    margin-left: 15px;
+    font-size: 24px;
+    transition: color 0.3s;
+    text-decoration: none;
+}
+
+.navIconsEnlaces a:hover {
+    color: #e6006e;
+
+}
+.Desplegable_Horizontal{
+    list-style: none;
+    display: flex;
+    justify-content:center;
+    padding: 2px 40px;
+}
+.Desplegable_Horizontal > li > a{
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+.Desplegable_Horizontal > li >a:hover{
+    color: #e6006e;
+}
+.Desplegable_Vertical{
+    position:absolute;
+    display: none;
+    list-style: none;
+    background-color: #333;
+    width: 150px;
+}
+.Desplegable_Horizontal > li:hover .Desplegable_Vertical{
+    display: block;
+}
+.Desplegable_Vertical li:hover{
+    background-color: #000000;
+}
+.Desplegable_Vertical li a:hover{
+   color: #e6006e;
+}
+.Desplegable_Vertical li a{
+    display: block;
+    color: white;
+    padding: 15px 15px 15px 20px;
+    text-decoration: none;
+}
+.Barra_Busqueda{
+    position: absolute;
+    transform: translate(-100%);
+}
+.Busqueda_Barra{
+    outline: none;
+    box-sizing: border-box;
+    height: 20px;
+    width: 0px;
+    padding: 12px;
+    color: #000000;
+    border-radius: 50%;
+    font-size: 15px;
+    border: 1px solid #000000;
+    transition: all .5s ease;
+}
+::placeholder{
+    color: gray;
+}
+.Boton_Busqueda{
+    position:absolute;
+    right: 0;
+    top: 0;
+    width: 25px;
+    height: 25px;
+    border-radius: 0;
+    text-align: center;
+    cursor: pointer;
+    transition: .2s;
+}
+.Boton_Busqueda i{
+    font-size: 22px;
+    color: rgb(0, 0, 0);
+    transition: all .5s ease;
+}
+.Barra_Busqueda:hover input{
+    width: 200px;
+    border-radius: 5%;
+}
+.Boton_Busqueda:hover{
+    background-color: #e6006e;
+}
+.BannerHorizontal {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.imagenesHorizontal {
+    display: flex;
+}
+
+.imagenyTexto {
+    margin: 0 10px;
+    text-align: center;
+}
+.imagenyTexto a{
+    text-decoration: none;
+}
+.imgP {
+    width: 250px;
+    height: 400px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.imgP:hover {
+    transform: scale(1.05);
+}
+
+.text-imagen {
+    color: #000000;
+    font-size: 24px;
+    bottom: 5px;
+    left: 50%;
+    padding: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 10px;
+    transition: transform 0.3s ease;
+}
+
+.text-imagen:hover{
+    transform: scale(1.05);
+}
+
+
+.barraHorizontalInfo {
+    background-color: rgb(44, 44, 44);
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.barraHorizontalInfo h3 {
+    margin: 0;
+}
+
+.barraHorizontalInfo h3:hover {
+    color: #e6006e;
+}
+footer {
+    text-align: center;
+    background-color: #222;
+    color: #fff;
+    padding: 10px;
+}
+@media (max-width: 1024px) {
+    .enlacesSuperior {
+        flex-wrap: wrap;
+    }
+
+    .navSuperior {
+        margin: 10px 10px;
+        font-size: 14px;
+    }
+
+    .imagenesHorizontal {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .imgP {
+        width: 200px;
+        height: auto;
+    }
+
+    .text-imagen {
+        font-size: 18px;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 768px) {
+    .iconsRedes,
+    .iconsEnlaces {
+        justify-content: center;
+        padding-right: 0;
+        padding: 10px 0;
+    }
+
+    .tituloSakura h1 {
+        font-size: 36px;
+    }
+
+    .enlacesSuperior {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navSuperior {
+        margin: 5px 0;
+    }
+
+    .imagenesHorizontal {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imagenyTexto {
+        margin-bottom: 20px;
+    }
+
+    .barraHorizontalInfo {
+        flex-direction: column;
+        align-items: center;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .barraHorizontalInfo h2 {
+        margin: 8px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .imgP {
+        width: 90vw;
+        height: auto;
+    }
+
+    .sakura {
+        font-size: 28px;
+    }
+
+    .text-imagen {
+        font-size: 16px;
+        padding: 6px;
+    }
+
+    .navIconsRedes a,
+    .navIconsEnlaces a {
+        font-size: 18px;
+        margin: 0 8px;
+    }
+}

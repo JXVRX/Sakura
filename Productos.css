@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(255, 254, 254);
+    font-weight: bold;
+}
+
+.encabezado {
+    background-color: rgb(0, 0, 0);
+    color: pink;
+    padding: 20px 0; 
+}
+
+.iconsRedes {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px;
+}
+
+.navIconsRedes a {
+    color:#e6006e;
+    margin: 0 15px;
+    font-size: 24px;
+    transition: color 0.3s;
+    text-decoration: none;
+}
+
+.navIconsRedes a:hover {
+    color: #ffffff;
+    
+}
+
+.tituloSakura {
+    text-align: center;
+    margin-top: 0px;
+}
+
+.sakura {
+    font-size: 50px;
+    font-weight: bold;
+    color: #e6006e;
+    letter-spacing: 5px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+.Nav_Sakura a{
+    text-decoration: none;
+}
+.superiorPrincipal {
+    background-color:rgb(44, 44, 44);
+    padding: 10px 0;
+}
+
+.enlacesSuperior {
+    display: flex;
+    justify-content: center;
+}
+
+.navSuperior {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.navSuperior:hover {
+    color: #e6006e;
+
+}
+
+.iconsEnlaces {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px;
+}
+
+.navIconsEnlaces a {
+    color: #ffffff;
+    margin-left: 15px;
+    font-size: 24px;
+    transition: color 0.3s;
+    text-decoration: none;
+}
+
+.navIconsEnlaces a:hover {
+    color: #e6006e;
+
+}
+.Desplegable_Horizontal{
+    list-style: none;
+    display: flex;
+    justify-content:center;
+    padding: 2px 40px;
+}
+.Desplegable_Horizontal > li > a{
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+.Desplegable_Horizontal > li >a:hover{
+    color: #e6006e;
+}
+.Desplegable_Vertical{
+    position:absolute;
+    display: none;
+    list-style: none;
+    background-color: #333;
+    width: 150px;
+}
+.Desplegable_Horizontal > li:hover .Desplegable_Vertical{
+    display: block;
+}
+.Desplegable_Vertical li:hover{
+    background-color: #000000;
+}
+.Desplegable_Vertical li a:hover{
+   color: #e6006e;
+}
+.Desplegable_Vertical li a{
+    display: block;
+    color: white;
+    padding: 15px 15px 15px 20px;
+    text-decoration: none;
+}
+.Barra_Busqueda{
+    position: absolute;
+    transform: translate(-100%);
+}
+.Busqueda_Barra{
+    outline: none;
+    box-sizing: border-box;
+    height: 20px;
+    width: 0px;
+    padding: 12px;
+    color: #000000;
+    border-radius: 50%;
+    font-size: 15px;
+    border: 1px solid #000000;
+    transition: all .5s ease;
+}
+::placeholder{
+    color: gray;
+}
+.Boton_Busqueda{
+    position:absolute;
+    right: 0;
+    top: 0;
+    width: 25px;
+    height: 25px;
+    border-radius: 0;
+    text-align: center;
+    cursor: pointer;
+    transition: .2s;
+}
+.Boton_Busqueda i{
+    font-size: 22px;
+    color: rgb(0, 0, 0);
+    transition: all .5s ease;
+}
+.Barra_Busqueda:hover input{
+    width: 200px;
+    border-radius: 5%;
+}
+.Boton_Busqueda:hover{
+    background-color: #e6006e;
+}
+section.productos {
+    padding: 20px;
+    text-align: center;
+}
+
+h2 {
+    color: #333;
+    font-size: 3.5em;
+}
+
+.lista-productos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.producto {
+    background-color: #fff;
+    padding: 15px;
+    margin: 50px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.producto:hover {
+    transform: scale(1.05);
+}
+
+.producto-imagen {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.producto-info {
+    margin-top: 10px;
+}
+
+.producto-nombre {
+    font-size: 1.5em;
+    color: #333;
+}
+
+.producto-descripcion {
+    font-size: 1em;
+    color: #666;
+    margin: 10px 0;
+}
+
+.producto-precio {
+    font-size: 1.2em;
+    color: #e74c3c;
+}
+
+.producto-comprar {
+    display: inline-block;
+    background-color: #f8b4d4;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.producto-comprar:hover {
+    background-color: #e6006e;
+}
+
+footer {
+    text-align: center;
+    background-color: #222;
+    color: #fff;
+    padding: 10px;
+}
