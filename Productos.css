@@ -244,3 +244,117 @@ footer {
     color: #fff;
     padding: 10px;
 }
+@media (max-width: 768px) {
+    .tituloSakura {
+        font-size: 1em;
+    }
+
+    .sakura {
+        font-size: 3em;
+    }
+
+    .navSuperior {
+        font-size: 1.2em;
+        margin: 0 10px;
+    }
+
+    .login-container {
+        width: 80%;
+        margin-top: 10%;
+    }
+
+    .input_barras {
+        width: 100%;
+    }
+
+    .Desplegable_Horizontal {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Desplegable_Horizontal > li > a {
+        padding: 10px;
+    }
+
+    .producto {
+        width: 220px;
+        margin: 10px;
+    }
+
+    .producto-nombre {
+        font-size: 1.2em;
+    }
+
+    .producto-descripcion {
+        font-size: 0.9em;
+    }
+
+    .producto-precio {
+        font-size: 1.1em;
+    }
+
+    .producto-comprar {
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        font-size: 0.9em;
+    }
+
+    .tituloSakura {
+        font-size: 1em;
+    }
+
+    .sakura {
+        font-size: 1.5em;
+    }
+
+    .login-container {
+        width: 90%;
+        margin-top: 10%;
+    }
+
+    .input_barras {
+        width: 100%;
+    }
+
+    .navSuperior {
+        font-size: 1em;
+        margin: 0 5px;
+    }
+
+    .Desplegable_Horizontal {
+        flex-direction: column;
+    }
+
+    .Desplegable_Horizontal > li > a {
+        padding: 8px;
+    }
+
+    .producto {
+        width: 180px;
+        margin: 10px;
+    }
+
+    .producto-nombre {
+        font-size: 1.1em;
+    }
+
+    .producto-descripcion {
+        font-size: 0.9em;
+    }
+
+    .producto-precio {
+        font-size: 1em;
+    }
+
+    .producto-comprar {
+        padding: 6px 12px;
+    }
+
+    h2 {
+        font-size: 2.5em;
+    }
+}
