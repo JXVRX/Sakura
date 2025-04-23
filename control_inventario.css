@@ -336,42 +336,29 @@ footer {
     color: #fff;
     padding: 10px;
 }
-@media (max-width: 1024px) {
-    .enlacesSuperior {
-        flex-wrap: wrap;
-    }
-
-    .navSuperior {
-        margin: 10px 10px;
+@media (max-width: 768px) {
+    /* Ajustes generales */
+    body {
         font-size: 14px;
     }
 
-    .imagenesHorizontal {
-        flex-wrap: wrap;
-        justify-content: center;
+    .sakura {
+        font-size: 30px;
+        letter-spacing: 2px;
     }
 
-    .imgP {
-        width: 200px;
-        height: auto;
+    .encabezado,
+    .superiorPrincipal,
+    .barraHorizontalInfo {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 
-    .text-imagen {
-        font-size: 18px;
-        padding: 8px;
-    }
-}
-
-@media (max-width: 768px) {
     .iconsRedes,
     .iconsEnlaces {
         justify-content: center;
-        padding-right: 0;
         padding: 10px 0;
-    }
-
-    .tituloSakura h1 {
-        font-size: 36px;
     }
 
     .enlacesSuperior {
@@ -380,48 +367,74 @@ footer {
     }
 
     .navSuperior {
-        margin: 5px 0;
+        margin: 10px 0;
+        font-size: 18px;
     }
 
-    .imagenesHorizontal {
-        flex-direction: column;
-        align-items: center;
+    .Boton_Superior {
+        font-size: 18px;
+        margin: 10px;
     }
 
-    .imagenyTexto {
-        margin-bottom: 20px;
-    }
-
-    .barraHorizontalInfo {
-        flex-direction: column;
-        align-items: center;
-        font-size: 16px;
+    .Botones_Main {
+        margin-left: 0;
         text-align: center;
     }
 
-    .barraHorizontalInfo h2 {
-        margin: 8px 0;
-    }
-}
-
-@media (max-width: 480px) {
-    .imgP {
-        width: 90vw;
-        height: auto;
-    }
-
-    .sakura {
-        font-size: 28px;
-    }
-
-    .text-imagen {
+    .Boton_Main {
+        margin: 10px;
         font-size: 16px;
-        padding: 6px;
     }
 
-    .navIconsRedes a,
-    .navIconsEnlaces a {
-        font-size: 18px;
-        margin: 0 8px;
+    .Tabla {
+        overflow-x: auto;
+        width: 100%;
+    }
+
+    table {
+        width: 100%;
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .Img_Fila_Tabla {
+        height: 60px;
+        width: 60px;
+    }
+
+    .th_Producto,
+    .th_Categoria,
+    .th_Stock,
+    .th_Precio,
+    .th_Proveedor,
+    .th_EnVenta {
+        padding: 10px;
+    }
+
+    .lbl_swicth {
+        width: 45px;
+        height: 25px;
+    }
+
+    .lbl_swicth::after {
+        width: 18px;
+        height: 18px;
+        top: 3px;
+        right: 24px;
+    }
+
+    #btn_switch_1:checked~ .lbl_swicth::after,
+    #btn_switch_2:checked~ .lbl_swicth::after,
+    #btn_switch_3:checked~ .lbl_swicth::after,
+    #btn_switch_4:checked~ .lbl_swicth::after,
+    #btn_switch_5:checked~ .lbl_swicth::after,
+    #btn_switch_6:checked~ .lbl_swicth::after {
+        left: 24px;
+    }
+
+    .barraHorizontalInfo h2 {
+        font-size: 16px;
+        padding: 5px 0;
     }
 }

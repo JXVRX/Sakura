@@ -228,3 +228,115 @@ button:hover{
     background-color: rgb(55, 55, 228);
     color: white;
 }
+@media (max-width: 1024px) {
+    .navSuperior {
+        margin: 10px 10px;
+        font-size: 14px;
+    }
+
+    .login-container {
+        width: 80%;
+        margin-top: 25%;
+    }
+
+    .input_barras {
+        width: 90%;
+    }
+
+    .Desplegable_Horizontal {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .iconsRedes,
+    .iconsEnlaces {
+        justify-content: center;
+        padding: 10px 0;
+    }
+
+    .sakura {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 768px) {
+    .enlacesSuperior {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navSuperior {
+        margin: 5px 0;
+    }
+
+    .Desplegable_Horizontal {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Desplegable_Horizontal > li {
+        margin: 5px 0;
+    }
+
+    .login-container {
+        width: 90%;
+        margin-top: 30%;
+    }
+
+    .input_barras {
+        width: 95%;
+    }
+
+    .sakura {
+        font-size: 30px;
+    }
+
+    .navIconsRedes a,
+    .navIconsEnlaces a {
+        font-size: 20px;
+        margin: 0 10px;
+    }
+
+    header {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .sakura {
+        font-size: 24px;
+    }
+
+    .input_barras {
+        font-size: 14px;
+    }
+
+    button {
+        padding: 12px 16px;
+        font-size: 16px;
+    }
+
+    .Boton_Busqueda i {
+        font-size: 18px;
+    }
+
+    .login-container {
+        padding: 15px;
+    }
+
+    .iconsRedes,
+    .iconsEnlaces {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Desplegable_Vertical {
+        position: relative;
+        width: 100%;
+    }
+
+    .Desplegable_Vertical li a {
+        padding: 10px;
+        text-align: center;
+    }
+}
